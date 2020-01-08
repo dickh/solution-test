@@ -18,7 +18,7 @@ public class Solution {
 		
 		Scanner scanner = new Scanner(System.in);
 		while(true) {
-			System.out.println("请输入0-9的数字: ");
+			System.out.println("please enter 0-9: ");
 			String str = scanner.next();
 			List<String> lss = getPossibleKeys(str, keyMaps);
 			System.out.println(lss);
