@@ -12,7 +12,6 @@ import org.springframework.util.StringUtils;
 public class DataUtils {
 
 	/**
-	 * 
 	 * @param inputStr: when inputStr is number, then return true
 	 * @return
 	 */

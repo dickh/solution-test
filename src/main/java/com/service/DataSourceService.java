@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -17,6 +19,8 @@ import com.utils.DataUtils;
  */
 @Service
 public class DataSourceService {
+	
+	private final Logger logger = LoggerFactory.getLogger(DataSourceService.class);
 
 	/**
 	 * maybe get data from database or config settings, hard code for now
@@ -42,7 +46,8 @@ public class DataSourceService {
 		ArrayList<String> result = new ArrayList<String>();
 		
 		if(StringUtils.isEmpty(inputStr) || !DataUtils.isNumeric(inputStr)) {
-			System.out.println("illegal input, please enter 0-9");
+			
+			logger.info("illegal input, please enter 0-9");
 			return null;
 		}
 		// input length is less than 2
