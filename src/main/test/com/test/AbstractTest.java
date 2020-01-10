@@ -14,7 +14,7 @@ import com.SolutionTestApplication;
 
 /**
  * @author Kevin
- *
+ * @description all the controller test must be extends AbstractTest
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = SolutionTestApplication.class)
