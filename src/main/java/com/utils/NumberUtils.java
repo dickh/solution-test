@@ -9,7 +9,7 @@ import org.springframework.util.StringUtils;
  * @author Kevin
  *
  */
-public class DataUtils {
+public class NumberUtils {
 
 	/**
 	 * @param inputStr: when inputStr is number, then return true

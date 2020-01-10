@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import com.utils.DataUtils;
+import com.utils.NumberUtils;
 
 /**
  * 
@@ -45,7 +45,7 @@ public class DataSourceService {
 		
 		ArrayList<String> result = new ArrayList<String>();
 		
-		if(StringUtils.isEmpty(inputStr) || !DataUtils.isNumeric(inputStr)) {
+		if(StringUtils.isEmpty(inputStr) || !NumberUtils.isNumeric(inputStr)) {
 			
 			logger.info("illegal input, please enter 0-9");
 			return null;
